@@ -32,7 +32,9 @@ setup(
         "accelerate>=0.26.0",
         "peft>=0.7.1",
         "bitsandbytes>=0.41.3",
-        "protobuf<4.0.0",
+        # Relaxed protobuf constraint - the <4.0.0 pin was too strict and
+        # caused conflicts with other packages in my environment.
+        "protobuf>=3.20.0",
         "huggingface_hub",
         "hf_transfer",
         "triton",
