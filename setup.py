@@ -47,6 +47,11 @@ setup(
             "isort",
             "flake8",
         ],
+        # Convenience group for running notebooks locally
+        "notebook": [
+            "jupyter",
+            "ipywidgets",
+        ],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
