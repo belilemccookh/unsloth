@@ -52,6 +52,12 @@ setup(
             "jupyter",
             "ipywidgets",
         ],
+        # Extra deps I personally use for experiment tracking and evaluation
+        "extras": [
+            "wandb",
+            "evaluate",
+            "rouge_score",
+        ],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
